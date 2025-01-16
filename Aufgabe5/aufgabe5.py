@@ -9,6 +9,16 @@ from tensorflow import keras
 import json
 
 """
+
+Genauigkeit des Modells:
+Test accuracy: 0.8916000127792358
+
+"""
+
+
+
+
+"""
 ## Prepare the data
 """
 
