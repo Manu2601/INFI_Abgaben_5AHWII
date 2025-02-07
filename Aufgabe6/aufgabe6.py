@@ -6,6 +6,17 @@ from tensorflow import keras
 from keras import layers
 from PIL import Image
 
+#---------------------------------------------------------------------------------------
+
+# zum Trainieren des Modells habe ich jeweils ca. 1000 Bilder pro Klasse verwendet. Dazu habe
+# ich Bilder von Kaggle heruntergeladen, um bessere Testdaten zu bekommen.
+
+# Mit den ganzen Bildern und genügend Epochen funktioniert das Modell ziemlich gut:
+# val_accuracy: 0.9048 - val_loss: 0.2712
+#--------------------------------------------------------------------------------------
+
+
+
 image_size = (180, 180)
 num_classes = 3
 input_shape = (180, 180, 3)
@@ -154,6 +165,6 @@ def real_time_prediction():
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    train_model("Aufgabe6/img/rps", epochs=80)
+    #train_model("Aufgabe6/img/rps", epochs=80)
 
-    #real_time_prediction()
+    real_time_prediction()
